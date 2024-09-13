@@ -1,11 +1,11 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
-    height: 100vh;
-    margin: 0 auto;
-    font-family: "Raleway", Helvetica, sans-serif;
-    font-size: 16px ;
+	height: 100vh;
+	margin: 0 auto;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 16px;
 }
 .container {
     width: 100%;
@@ -17,12 +17,14 @@ body {
     background: #f5f3f4;
 }
 .header {
-    display: flex;
+    display: table;
     justify-content: flex-end;
     margin: 0 45px;
 }
 .header ul {
     display: flex;
+    justify-content: flex-start; /* Mantém os primeiros itens à esquerda */
+    list-style-type: none;   /* Remove os marcadores da lista */
 }
 .header ul li {
     list-style: none;
@@ -35,6 +37,9 @@ body {
 }
 .header ul li a:hover {
     color: #0000ff;
+    list-style: none;
+    	margin: 0 25px;
+	color: #3e3e3e;
 }
 .header ul li:last-child {
     background: #fff;
@@ -44,8 +49,26 @@ body {
     border: 1px solid #dcdcdc;
     color:#0000ff;
     font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
 }
 .header ul li:last-child:hover {
+    background: #0000ff;
+    color: #fff
+}
+
+.header ul li:nth-child(4) {
+    background: #fff;
+    padding: 2.5px 50px;
+    margin: 0 0 0 25px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    color:#0000ff;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+}
+.header ul li:nth-child(4):hover {
     background: #0000ff;
     color: #fff
 }
